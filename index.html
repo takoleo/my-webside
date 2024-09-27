@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8" >
+   <title>Calculator</title>
+   <link rel="stylesheet" href="Bootstrap.css" >
+</head>
+<body>
+<section class="container">
+   <form onsubmit="gestionDuFormulaire(event)">
+         <div class="row">
+
+               <div class="mb-3 col">
+                  <label for="firstNumber" class="form-label">firstNumber</label>
+                  <input type="number" class="form-control" id="firstNumber" placeholder="10">
+               </div>
+
+               <div class="mb-3 col">
+                  <label for="firstNumber" class="form-label">secondNumber</label>
+                  <input type="number" class="form-control" id="secondNumber" placeholder="10">
+               </div>
+         </div>
+      <div class="mb-3 col-4  mx-auto">
+         <select name="operation" id="operation" class="form-select" >
+            <option selected>Operation</option>
+            <option value="1">Addition</option>
+            <option value="2">multiplication</option>
+         </select>
+      </div><br>
+
+      <div class="d-grid gap-2 col-2 mx-auto" >
+         <button class="btn btn-primary" type="submit">Calculer</button>
+      </div>
+   </form>
+   <p id="resul"></p>
+</section>
+<script src="script/calculator.js" type="text/javascript"></script>
+</body>
+</html>
